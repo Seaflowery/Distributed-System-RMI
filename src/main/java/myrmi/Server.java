@@ -1,11 +1,13 @@
 package myrmi;
 
-import myrmi.exception.AlreadyBoundException;
-import myrmi.exception.NotBoundException;
+import myrmi.CalculationImpl1;
+import myrmi.CalculationImpl2;
 import myrmi.registry.LocateRegistry;
 import myrmi.registry.Registry;
+import myrmi.registry.RegistryImpl;
+import myrmi.server.UnicastRemoteObject;
 
-public class Client {
+public class Server {
     public static void main(String[] args) {
         try {
             // Connect to the remote registry
@@ -27,5 +29,4 @@ public class Client {
             e.printStackTrace();
         }
     }
-
 }
